@@ -31,14 +31,25 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    user-select: none;
 }
 
 .lineIndex{
     margin-right: 15px;
+    text-align: right;
+    width: 20px;
 }
 
 input{
-    padding: 5px 15px;
+    padding: 5px 5px;
+    background-color: #2e3440;
+    border: 1px solid rgba(255, 255, 255, 0);
+    outline: none;
+}
+
+.codeInput{
+    width: 100%;
+    padding: 5px 5px;
     background-color: #2e3440;
     border: 1px solid rgba(255, 255, 255, 0);
     outline: none;
@@ -46,5 +57,4 @@ input{
 
 .codeInput:focus{
     background-color: rgb(40, 46, 56);
-    width:100%;
 }
